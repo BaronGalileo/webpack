@@ -36,7 +36,8 @@
     "css-loader": "^6.10.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
     "mini-css-extract-plugin": "^2.8.1",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^3.2.5"
   },
   "husky": {
     "hooks": {
@@ -44,7 +45,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.js}": [
       "npm run lint",
       "git add"
     ]
