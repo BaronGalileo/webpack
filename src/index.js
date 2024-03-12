@@ -1,7 +1,7 @@
 import    { sum as sum_my } from "./math.js";
 import "./style.css";
 
-document.write("Hello, world!");
+document.write"Hello, world!");
 alert('Привет!');
 
 const sum = (a,b) => a * b;
