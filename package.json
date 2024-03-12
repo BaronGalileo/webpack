@@ -38,16 +38,5 @@
     "mini-css-extract-plugin": "^2.8.1",
     "parcel-bundler": "^1.12.5",
     "prettier": "^3.2.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js}": [
-      "npm run lint",
-      "git add"
-    ]
   }
 }
