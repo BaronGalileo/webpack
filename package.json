@@ -8,7 +8,9 @@
     "start:prod": "webpack serve --env mode=production",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
-    "server": "json-server --watch database.json"
+    "server": "json-server --watch database.json",
+    "lint": "eslint ./src",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +21,8 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "style-loader": "^3.3.4",
@@ -33,5 +37,16 @@
     "css-minimizer-webpack-plugin": "^6.0.0",
     "mini-css-extract-plugin": "^2.8.1",
     "parcel-bundler": "^1.12.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }
