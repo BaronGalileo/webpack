@@ -1,5 +1,5 @@
 import    { sum as sum_my } from "./math.js";
-import ./style.css";
+import "./style.css";
 document.write("Hello, world!");
 alert('Привет!');
 
